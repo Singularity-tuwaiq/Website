@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singularity - المدونة والمشاريع</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="modal-overlay" id="blogModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeBlog()">&times;</span>
+            <h2 id="modalTitle">عنوان المقال</h2>
+            <div id="modalBody">نص المقال...</div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo">SINGULARITY</div>
+        <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#projects">مشاريعنا</a></li>
+            <li><a href="#blog">المدونة</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="hero-content">
+            <h1>SINGULARITY</h1>
+            <p>نكتب كود الكون.. ونبرمج قوانين الفيزياء</p>
+            <a href="#blog" class="btn-main">اقرأ مقالاتنا</a>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2 class="section-title">من نحن</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="icon">🔭</div>
+                <h3>الرؤية</h3>
+                <p>تمكين الفيزياء تقنيًا لتحسين جودة الحياة وبناء مستقبل مستدام.</p>
+            </div>
+            <div class="card">
+                <div class="icon">💡</div>
+                <h3>الرسالة</h3>
+                <p>سد الفجوة بين النظريات الفيزيائية والتطبيقات البرمجية الحديثة.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🎯</div>
+                <h3>الأهداف</h3>
+                <p>ابتكار حلول ذكية ونشر المعرفة العلمية بأسلوب تقني مبسط.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 class="section-title">مشاريعنا</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img p1"></div>
+                <div class="project-info">
+                    <h3>محاكي الثقوب السوداء</h3>
+                    <p>نموذج برمجي يحاكي انحناء الضوء حول الثقب الأسود.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img p2"></div>
+                <div class="project-info">
+                    <h3>رادار السرعة الذكي</h3>
+                    <p>استخدام الحساسات لقياس السرعة وعرضها عبر تطبيق ويب.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img p3"></div>
+                <div class="project-info">
+                    <h3>تشفير Base44</h3>
+                    <p>خوارزمية خاصة بالفريق لتشفير البيانات الفيزيائية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="container">
+        <h2 class="section-title">المدونة العلمية</h2>
+        <div class="blog-grid">
+            
+            <article class="blog-post">
+                <span class="date">15 أكتوبر 2025</span>
+                <h3>لماذا الفيزياء تحتاج البرمجة؟</h3>
+                <p class="excerpt">الفيزياء الحديثة لم تعد مجرد معادلات على ورق، بل أصبحت محاكاة حاسوبية ضخمة...</p>
+                <button onclick="openBlog(1)">اقرأ المزيد</button>
+            </article>
+
+            <article class="blog-post">
+                <span class="date">10 نوفمبر 2025</span>
+                <h3>ما هي "Singularity"؟</h3>
+                <p class="excerpt">مصطلح التفرد يظهر في الثقوب السوداء وفي الذكاء الاصطناعي. ما الرابط بينهما؟...</p>
+                <button onclick="openBlog(2)">اقرأ المزيد</button>
+            </article>
+
+            <article class="blog-post">
+                <span class="date">20 ديسمبر 2025</span>
+                <h3>كيف تصنع محرك فيزيائي؟</h3>
+                <p class="excerpt">خطوات بسيطة لبرمجة محرك يحاكي الجاذبية والتصادم باستخدام لغة Python...</p>
+                <button onclick="openBlog(3)">اقرأ المزيد</button>
+            </article>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 لفريق Singularity</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
